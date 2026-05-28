@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    
+</body>
+<script>
+var nome = ["maria"];
+
+nome.push("jose");
+nome.push("neto");
+nome.push("luan");
+nome.push("luna");
+nome.push("joao");
+nome.push("lucas");
+nome.push("jack");
+nome.push("pedro");
+nome.push("carlos");
+nome.push("xavier");
+
+document.write(nome + "<br>");
+
+
+nome.pop();
+
+document.write(nome + "<br>");
+
+
+document.write(nome.length + "<br>");
+
+var num = [1,5,8,10,4];
+
+
+num.sort();
+
+document.write(num + "<br>");
+
+
+var soma = num.reduce((total, valor) => total + valor);
+
+document.write(soma + "<br>");
+
+var num2 = [1,3,5,7,10,20,30];
+
+var maior = num2.filter(nu => nu > 10);
+
+num2.forEach((n) => document.write(n + "| "))
+
+document.write(maior + "<br>");
+
+var nome2 = ["kevin","carlinhos","gabriel","pablo"];
+
+
+nome2.splice(2,2);
+
+document.write(nome2 + "<br>");
+
+document.writeln(nome2.find((n) => {
+    return n == "kevin"
+}))
+
+const aluno = [
+    {nome: "netin", idade: 16, cidade: "mauriti"},
+    {nome: "thalys", idade: 17, cidade: "mauriti city"},
+    {nome: "luiz", idade: 18, lugar: "barrosao"},
+    {nome:"kenteni", idade: 19, lugar: "mae rainha"},
+    {nome: "josé", idade: 16, cidade: "mauriti"},
+    {nome:"manu", idade: 17, cidade: "mauriti"},
+    {nome: "Israel", idade: 55, cidade: "mauriti"},
+    {nome: "Gonçalves", idade: 17, cidade: "mauriti"},
+    {nome: "joao pedro", idade: 23,cidade: "mauriti"},
+    {nome: "kenedy", idade: 17, cidade: "mauriti"}
+]
+
+
+</script>
+</html>
